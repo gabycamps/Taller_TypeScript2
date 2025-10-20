@@ -7,9 +7,9 @@ const tableContainer: HTMLElement = document.querySelector(".table-container")!;
 renderSeriesInTable(series);
 
 function renderSeriesInTable(series: Serie[]): void {
-
+    console.log('Desplegando series');
     series.forEach(s => {
-        let trElement = document.createElement("tr");
+        let trElement = document.createElement("tr"); //row
     trElement.addEventListener("click", () => renderSerieDetail(s));
     trElement.innerHTML = `<td>${s.id}</td>
                             <td>${s.name}</td>
@@ -46,7 +46,7 @@ function renderSerieDetail(series: Serie): void {
     cardContainer.innerHTML = "";
 
     const cardHTML =`
-    <div class="card text-white bg-dark mb-3" style="max-width: 18rem;>
+    <div class="card text-white bg-dark mb-3" style="max-width: 18rem";>
         <img src="${series.imageUrl}" class="card-img-top" alt="${series.name}">
         <div class="card-body">
             <h5 class="card-title">${series.name}</h5>
