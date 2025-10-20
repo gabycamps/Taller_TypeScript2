@@ -1,0 +1,39 @@
+
+
+body {
+        background-color: rgb(40, 44, 56);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+            }
+
+h1 {
+    background-color: mediumpurple;
+    color: white;
+    padding: 10px;
+    font-family: fantasy;
+            }
+
+table {
+    width: 60%;
+    border-collapse: collapse;
+            }
+
+th, td {
+
+    padding: 8px;
+            }
+
+th {
+    background-color: hsl(0, 0%, 95%);
+            }
+
+.table-container {
+    width: 50%;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.avg{
+    color: white;
+}
